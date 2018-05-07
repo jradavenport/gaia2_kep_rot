@@ -20,7 +20,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 \title{Rotating Stars from \Kepler Observed with Gaia DR2}
 
-\shorttitle{Rotating Stars}
+\shorttitle{Rotating Stars from \Kepler Observed with Gaia DR2}
 \shortauthors{Davenport et al.}
 
 
@@ -43,7 +43,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-Astrometric data from the recent Gaia Data Release 2 has been matched against the sample of stars from \Kepler with known rotation periods. 
+We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars within a 0.5 mag region about a 1 Gyr isochrone. This removes sub-giants and unresolved binary stars from the sample.
+The rotation period bimodality, originally discovered by \citet{mcquillan2013}, is recovered for stars out to 525pc, but is not detectable at further distances. 
+We also find a significant width in the stellar main sequence of $M_G\sim$0.25 mag, as well as a  increase in the average rotation period correlated with the $M_G$ offset at a given color (mass). We interpret this to be the measurable change in luminosity and loss of angular momentum as stars evolve along the main sequence, which may provide a new independent test of stellar evolution and gyrochronlogy models.
+This investigation represents the first step in understanding the star formation history of our solar neighborhood as traced through stellar angular momentum loss. 
 \end{abstract}
 
 
@@ -51,28 +54,29 @@ Astrometric data from the recent Gaia Data Release 2 has been matched against th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-The \Kepler mission \citep{borucki2010} 
+The \Kepler mission \citep{borucki2010} a new era for enabling detailed study of angular momentum loss in low-mass stars. long noted as a means to possibly age-date stars (gyro), open clusters give hope that this general model works for low-mass stars
+many Qs exist about details. these include Qs about initial rotation period distribution (CITE), the specific prescription for spin-down (ANGUS, etc), and exploring the efficiency of this angular momentum loss mechanism at old ages (Van Saders).
+
+
+one of the most compelling results from the rotation work in \Kepler is the discovery of a period bimodality. 
+\citet{mcquillan2013} found bimodal feature, in M and later K stars \citep{mcquillan2014}. Davenport used Gaia DR1 to remove contamination from sub-giants and found the feature in G dwarfs. this feature proposed to be either a new short-lived transition or instability phase of momentum loss, or a signature of star formation history imprinted in the present-day rotation period distribution. However, to date this feature has only been observed in the \Kepler rotation period catalog, and most critically only for stars within $\sim$300 pc.
 
 
 
 
+In this letter we follow the work of \citet{davenport2017} in studying the \Kepler rotation period sample using astrometric data from the {\em Gaia} mission \citep{gaia}. By matching the \citet{mcquillan2014} rotation period catalog to the newest data from {\em Gaia} Data Release 2, we can use precise distances for essentially every star to select likely main sequence dwarfs to distances well over 1 kpc. Importantly this filters out both sub-giants (the main contaminant noted by \cite{davenport2017}), and unresolved binary stars.
+Here we demonstrate the power of such a combined time-domain and astrometric sample for constraining the detailed evolution of main sequence stars themselves, and exploring the star formation history of the Milky Way.
 
-\citet{mcquillan2013} bimodal period distribution 
-\citep{mcquillan2014}.
 
-\citet{davenport2017} looked at this with Gaia DR1, extending period gap to G dwarfs, pointing to SFH as cause. sub giant contamination was the thing. Now we can finally follow up on this and study the full \Kepler rotation period sample
+%\citet{davenport2017} looked at this with Gaia DR1, extending period gap to G dwarfs, pointing to SFH as cause. sub giant contamination was the thing. Now we can finally follow up on this and study the full \Kepler rotation period sample
 
- \citep{gaia} mission 
  
-
-
-In this letter
-
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{The \Kepler--Gaia Data}
+
 %Rotation periods in this study come from \citet{mcquillan2014}, who performed an Auto-Correlation Function analysis of \Kepler stars cooler than 6500 K that had at least $\sim$2 years of observation. The periods recovered from this approach generally agree very well with those found via Lomb-Scargle Periodograms \citep[e.g.][]{reinhold2013,aigrain2015}. Sources with multiple distinct periods, such as from binary systems with two spotted stars \citep[e.g.][]{lurie2015} are detected by \citet{mcquillan2014}, but are not included in the following analysis.
 
 %The Gaia Data Release 1 (DR1) provides astrometric positions for over $10^9$ sources from the first year of observation with Gaia. The Tycho-Gaia Astrometric Solution (TGAS) measures improved proper motions and parallaxes for 2 million nearby, bright sources by extending the astrometric solutions from Tycho and Hipparcos. While the TGAS data are not a complete astrometric survey, and have possible systematics in the reported parallaxes \citep{gaia_dr1,stassun2016}, they represent a significant improvement in the astrometry and kinematics available for stars in the \Kepler field.
@@ -151,10 +155,11 @@ Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014}
 %\end{figure}
 %
 
+
 \begin{figure}[]
 \centering
 \includegraphics[width=3.5in]{../figures/delta_per}
-\caption{Histograms of the log rotation periods after a 600 Myr gyrochrone was subtracted for stars in the same five distance bins shown in Figure \ref{fig:color_period}.
+\caption{Histograms of the log rotation periods after a 600 Myr gyrochrone was subtracted for stars in the same five distance bins shown in Figure \ref{fig:color_period}. The period bimodality for stars within 350 pc has two peaks similar to those found in \citet{davenport2017}, at -0.15 and +0.18 dex. The fast rotating peak (left side) declines sharply at further distances, however.
 }
 \label{fig:per_hist}
 \end{figure}
@@ -166,7 +171,7 @@ Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014}
 \begin{figure*}[]
 \centering
 \includegraphics[width=6.5in]{../figures/cmd_zoom}
-\caption{
+\caption{Left: Enlarged portion of the color--magnitude diagram from Figure \ref{fig:cmd} in a region centered near $\sim$0.75 M$_\odot$, with MIST isochrones at ages of $10^8$, $10^9$, and $10^10$ yr for comparison (blue, black, and red lines). Points are colored by their measured \Kepler rotation periods from \citet{mcquillan2014}. The main sequence shows significant scatter, as well as a gradient in rotation period. Right: Difference in $M_G$ from the $10^9$ yr MIST isochrone, shown as a function of their rotation periods (point color again indicates rotation period). Blue squares show an increase in the median $M_G$ offset in bins of increasing rotation period. Error bars shown are the standard deviation of $\Delta M_G$ in each bin.
 }
 \label{fig:cmd_zoom}
 \end{figure*}
