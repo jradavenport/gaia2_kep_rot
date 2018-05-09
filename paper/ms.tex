@@ -55,7 +55,7 @@ This investigation represents the first step in understanding the star formation
 \section{Introduction}
 
 The \Kepler mission \citep{borucki2010} a new era for enabling detailed study of angular momentum loss in low-mass stars. long noted as a means to possibly age-date stars (gyro), open clusters give hope that this general model works for low-mass stars
-many Qs exist about details. these include Qs about initial rotation period distribution (CITE), the specific prescription for spin-down (ANGUS, etc), and exploring the efficiency of this angular momentum loss mechanism at old ages (Van Saders).
+many Qs exist about details. these include Qs about initial rotation period distribution \citep[e.g.][]{barnes2010,matt2015}, the specific prescription for spin-down \citep{angus2015}, and exploring the efficiency of this angular momentum loss mechanism at old ages \citep{van-saders2016}.
 
 
 one of the most compelling results from the rotation work in \Kepler is the discovery of a period bimodality. 
@@ -63,13 +63,8 @@ one of the most compelling results from the rotation work in \Kepler is the disc
 
 
 
-
-In this letter we follow the work of \citet{davenport2017} in studying the \Kepler rotation period sample using astrometric data from the {\em Gaia} mission \citep{gaia}. By matching the \citet{mcquillan2014} rotation period catalog to the newest data from {\em Gaia} Data Release 2, we can use precise distances for essentially every star to select likely main sequence dwarfs to distances well over 1 kpc. Importantly this filters out both sub-giants (the main contaminant noted by \cite{davenport2017}), and unresolved binary stars.
+In this letter we follow the work of \citet{davenport2017} in studying the \Kepler rotation period sample using astrometric data from the {\em Gaia} mission \citep{gaia}. By matching the \citet{mcquillan2014} rotation period catalog to the newest data from {\em Gaia} Data Release 2 \citep{gaia_dr2}, we can use precise distances for essentially every star to select likely main sequence dwarfs to distances well over 1 kpc. Importantly this filters out both sub-giants (the main contaminant noted by \cite{davenport2017}), and unresolved binary stars.
 Here we demonstrate the power of such a combined time-domain and astrometric sample for constraining the detailed evolution of main sequence stars themselves, and exploring the star formation history of the Milky Way.
-
-
-%\citet{davenport2017} looked at this with Gaia DR1, extending period gap to G dwarfs, pointing to SFH as cause. sub giant contamination was the thing. Now we can finally follow up on this and study the full \Kepler rotation period sample
-
  
 
 
@@ -82,8 +77,33 @@ Here we demonstrate the power of such a combined time-domain and astrometric sam
 %The Gaia Data Release 1 (DR1) provides astrometric positions for over $10^9$ sources from the first year of observation with Gaia. The Tycho-Gaia Astrometric Solution (TGAS) measures improved proper motions and parallaxes for 2 million nearby, bright sources by extending the astrometric solutions from Tycho and Hipparcos. While the TGAS data are not a complete astrometric survey, and have possible systematics in the reported parallaxes \citep{gaia_dr1,stassun2016}, they represent a significant improvement in the astrometry and kinematics available for stars in the \Kepler field.
 
 
-data xmatched by M. Bedell between Kepler DR25 (CITE) and Gaia DR2 (CITE), using 1arcsec radius.
+Our 
+data xmatched by M. Bedell between \Kepler and Gaia DR2 (CITE). using 1arcsec radius, which included 195,830 sources with stellar properties from the \Kepler Data Release 25 and {\em Gaia} DR2.
+
+sub-set was matched to the rotation catalog of \citet{mcquillan2014}
+
+To select stars with good parallaxes, as well as high quality photometry from {\em Gaia}, we selected stars with the following criteria:
+\begin{itemize}
+\item Parallax error $< 0.1$ mas
+\item $\sigma(M_{G}) / M_{G} < 0.01$
+\item $\sigma(G_{BP}) /G_{BP} < 0.01$
+\item $\sigma(G_{RP}) /G_{RP} < 0.01$
+\end{itemize}
+
 distances using the updated prescription from \citet{bailer-jones2018}
+Following the suggested use of \citet{bailer-jones2018}, we use only sources with {\tt modality\_flag} == 1 (i.e. not a bimodal distance solution) and {\tt result\_flag} == 1 (i.e. well constrained distance).
+              
+
+Our final sample contained 30,305 stars in Gaia DR2 with measured \Kepler rotation periods that passed these selection criteria. A color--magnitude diagram of this sample is presented in Figure \ref{fig:cmd}, with points colored by their rotation periods.
+
+
+\begin{figure}[]
+\centering
+\includegraphics[width=3.6in]{../figures/cmd}
+\caption{
+Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014} sample that are included in Gaia DR2, colored by their measured rotation period. For reference we show a $10^9$ year MIST isochrone (black line) used to select likely main sequence, single stars (black line). A track of binary  stars is apparent $\sim$0.75 mag above the main sequence. As in \citet{davenport2017}, we find significant contamination of the rotation period sample for bluer stars by sub-giants.}
+\label{fig:cmd}
+\end{figure}
 
 
 
@@ -91,15 +111,12 @@ distances using the updated prescription from \citet{bailer-jones2018}
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Selecting Main Sequence Stars}
 
+As in \citet{davenport2017}, the color--magnitude diagram shown in Figure \ref{fig:cmd} shows many of the bluer stars in the \citet{mcquillan2014} sample are significantly above the main sequence. These are likely subgiant stars, which do not follow the main sequence stars spin-down evolution \citep[e.g.][]{donascimento2012, van-saders2013}. Since \citet{davenport2017} found subgiants could obscure the rotation period bimodality for G dwarfs, these must be excluded from our analysis, but encourage future studies to explore the wealth of angular momentum evolution data from these most-main sequence objects.
 
+Beyond the subgiant contamination above the main sequence, we can also see a secondary population of stars in a parallel track above the normal main sequence, which are likely unresolved binary stars. The pile-up above the main sequence occurs due to unresolved equal-mass field binaries, which was seen in the {\em Gaia} DR1 data as well \citep{anderson2017}. Since these systems may have experienced tidal evolution that could significantly impact their rotation evolution \citep[e.g.][]{lurie2017}, we must also remove these from our analysis. Though we do not explore the binary population in any detail here, this sample (perhaps with radial velocity follow-up) may provide useful insight into the tidal evolution of binary stars.
 
-\begin{figure*}[]
-\centering
-\includegraphics[width=6in]{../figures/cmd}
-\caption{
-Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014} sample that are included in Gaia DR2, colored by their measured rotation period. For reference we show a $10^9$ year MIST isochrone (black line) used to select likely main sequence, single stars (black line). A track of binary  stars is apparent $\sim$0.7 mag above the main sequence. As in \citet{davenport2017}, we find significant contamination of the rotation period sample for bluer stars by sub-giants.}
-\label{fig:cmd}
-\end{figure*}
+we use the Mesa Isochrones and Stellar Tracks \citep[MIST;][]{MIST} to describe the main sequence stars in Figure \ref{fig:cmd} using [Fe/H] =0.25, and an age of $10^9$ years.
+main seq stars chosen in 0.5 mag window
 
 
 
@@ -211,22 +228,20 @@ Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014}
 
 JRAD is supported by an NSF Astronomy and Astrophysics Postdoctoral Fellowship under award AST-1501418. 
 
-This work made use of the \url{gaia-kepler.fun} crossmatch database created by Megan Bedell.
+This work made use of the \url{gaia-kepler.fun} crossmatch database, created by Megan Bedell.
 
 This project was developed as part of the 2018 NYC Gaia Sprint, hosted by the Center for Computational Astrophysics at the Simons Foundation in New York City.
 
-%This research made use of the cross-match service, and the SIMBAD database, provided by CDS, Strasbourg, France.
-%
-%This work has made use of data from the European Space Agency (ESA)
-%mission {\it Gaia} (\url{http://www.cosmos.esa.int/gaia}), processed by
-%the {\it Gaia} Data Processing and Analysis Consortium (DPAC,
-%\url{http://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding
-%for the DPAC has been provided by national institutions, in particular
-%the institutions participating in the {\it Gaia} Multilateral Agreement.
+
+This work has made use of data from the European Space Agency (ESA) mission
+{\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia}
+Data Processing and Analysis Consortium (DPAC,
+\url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC
+has been provided by national institutions, in particular the institutions
+participating in the {\it Gaia} Multilateral Agreement.
 
 
 
-
-\bibliography{/Users/james/Dropbox/references}
+\bibliography{/Users/davenpj3/Dropbox/references}
 
 \end{document}
