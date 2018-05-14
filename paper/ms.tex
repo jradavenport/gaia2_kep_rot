@@ -72,15 +72,9 @@ Here we demonstrate the power of such a combined time-domain and astrometric sam
 %%%%%%%%%%%%%%%%%%%%%%
 \section{The \Kepler--Gaia Data}
 
-%Rotation periods in this study come from \citet{mcquillan2014}, who performed an Auto-Correlation Function analysis of \Kepler stars cooler than 6500 K that had at least $\sim$2 years of observation. The periods recovered from this approach generally agree very well with those found via Lomb-Scargle Periodograms \citep[e.g.][]{reinhold2013,aigrain2015}. Sources with multiple distinct periods, such as from binary systems with two spotted stars \citep[e.g.][]{lurie2015} are detected by \citet{mcquillan2014}, but are not included in the following analysis.
+We used the largest homogeneous catalog of rotation periods available from the \Kepler mission. The sample from \citet{mcquillan2014} provides rotation periods for more 34,030 stars, measured using the Auto-Correlation Function (ACF). While the ACF does not have as fine of resolution in recovering periods as compared with methods such as the Lomb-Scargle Periodogram, it is more robust to detecting the true period as opposed to an alias, and more complete for batch analysis of all stars \citep[e.g. see][]{aigrain2015}.
 
-%The Gaia Data Release 1 (DR1) provides astrometric positions for over $10^9$ sources from the first year of observation with Gaia. The Tycho-Gaia Astrometric Solution (TGAS) measures improved proper motions and parallaxes for 2 million nearby, bright sources by extending the astrometric solutions from Tycho and Hipparcos. While the TGAS data are not a complete astrometric survey, and have possible systematics in the reported parallaxes \citep{gaia_dr1,stassun2016}, they represent a significant improvement in the astrometry and kinematics available for stars in the \Kepler field.
-
-
-Our 
-data xmatched by M. Bedell between \Kepler and Gaia DR2 (CITE). using 1arcsec radius, which included 195,830 sources with stellar properties from the \Kepler Data Release 25 and {\em Gaia} DR2.
-
-sub-set was matched to the rotation catalog of \citet{mcquillan2014}
+The \Kepler data was matched to the {\em Gaia} DR2 source catalog using a 1 arcsecond radius. We used the \Kepler--Gaia cross-match made publicly available by M. Bedell, which included entries for 195,830 sources. \Kepler-based stellar parameters included in this cross-match come the Data Release 25 \Kepler catalog. Joining this cross-matched table to the \citet{mcquillan2014} catalog, we found 33,538 sources.
 
 To select stars with good parallaxes, as well as high quality photometry from {\em Gaia}, we selected stars with the following criteria:
 \begin{itemize}
@@ -90,8 +84,7 @@ To select stars with good parallaxes, as well as high quality photometry from {\
 \item $\sigma(G_{RP}) /G_{RP} < 0.01$
 \end{itemize}
 
-distances using the updated prescription from \citet{bailer-jones2018}
-Following the suggested use of \citet{bailer-jones2018}, we use only sources with {\tt modality\_flag} == 1 (i.e. not a bimodal distance solution) and {\tt result\_flag} == 1 (i.e. well constrained distance).
+Rather than simply use the inverse {\em Gaia} parallax values to measure the distance to sources, we use the improved distance prescription from \citet{bailer-jones2018}, who provided independent distances estimates for 1.33 billion {\em Gaia} sources using a weak prior on the distribution of stars in our galaxy. We follow their suggested use of the distance catalog, we only include sources with {\tt modality\_flag} == 1 (i.e. not a bimodal distance solution) and {\tt result\_flag} == 1 (i.e. well constrained distance).
               
 
 Our final sample contained 30,305 stars in Gaia DR2 with measured \Kepler rotation periods that passed these selection criteria. A color--magnitude diagram of this sample is presented in Figure \ref{fig:cmd}, with points colored by their rotation periods.
