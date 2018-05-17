@@ -104,43 +104,22 @@ Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014}
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Selecting Main Sequence Stars}
 
-As in \citet{davenport2017}, the color--magnitude diagram shown in Figure \ref{fig:cmd} shows many of the bluer stars in the \citet{mcquillan2014} sample are significantly above the main sequence. These are likely subgiant stars, which do not follow the main sequence stars spin-down evolution \citep[e.g.][]{donascimento2012, van-saders2013}. Since \citet{davenport2017} found subgiants could obscure the rotation period bimodality for G dwarfs, these must be excluded from our analysis, but encourage future studies to explore the wealth of angular momentum evolution data from these most-main sequence objects.
+As in \citet{davenport2017}, the color--magnitude diagram in Figure \ref{fig:cmd} shows many of the bluer stars in the \citet{mcquillan2014} sample are located significantly above the main sequence. These are likely subgiant stars, which do not follow the main sequence stars spin-down evolution \citep[e.g.][]{donascimento2012, van-saders2013}. Since \citet{davenport2017} found subgiants could obscure the rotation period bimodality for G dwarfs, these must be excluded from our analysis, but we encourage future studies to explore the wealth of angular momentum evolution data from these most-main sequence objects.
 
-Beyond the subgiant contamination above the main sequence, we can also see a secondary population of stars in a parallel track above the normal main sequence, which are likely unresolved binary stars. The pile-up above the main sequence occurs due to unresolved equal-mass field binaries, which was seen in the {\em Gaia} DR1 data as well \citep{anderson2017}. Since these systems may have experienced tidal evolution that could significantly impact their rotation evolution \citep[e.g.][]{lurie2017}, we must also remove these from our analysis. Though we do not explore the binary population in any detail here, this sample (perhaps with radial velocity follow-up) may provide useful insight into the tidal evolution of binary stars.
+Beyond the subgiant contamination, we also see a secondary population of stars in a parallel track $\sim$0.75 mag above the normal main sequence, which are attributed to unresolved binary star systems. This pile-up above the main sequence occurs due to unresolved equal-mass (or nearly equal-mass) field binaries, and was seen in the {\em Gaia} DR1 data as well \citep{anderson2017}. Since these systems may have experienced tidal evolution that could significantly impact their rotation evolution \citep[e.g.][]{lurie2017}, we must also remove these from our analysis. Though we do not explore the binary population in any detail here, this sample (perhaps with radial velocity follow-up) may provide useful insight into the tidal evolution of binary stars, and are good targets for characterizing binary star system properties. We also note a small number of systems above the even the equal-mass binary main sequence track, which could be due to unresolved triple star systems.
 
-we use the Mesa Isochrones and Stellar Tracks \citep[MIST;][]{MIST} to describe the main sequence stars in Figure \ref{fig:cmd} using [Fe/H] =0.25, and an age of $10^9$ years.
-main seq stars chosen in 0.5 mag window
-
-
-
-
-
-%Though \citet{mcquillan2014} attempted to only measure periods for dwarf stars, the sample of \Kepler--Gaia matched stars contains both main sequence dwarfs and evolved stars (giants and subgiants). Previous studies have shown  significant contamination by giants or subgiants can affect the implied variability properties of dwarf stars \citep{ciardi2011,mann2012}. Therefore to properly understand the nature of the period distribution and its implications for age-dating field stars, a robust sample of main sequence stars must be selected.
-%
-%Faint stars were removed by requiring sources have $G$-band flux errors $<1$\%. To ensure accurate distances, and therefore luminosities, parallaxes were required to have errors $<0.4$ mas. These cuts left a total of 894 stars from the \Kepler--TGAS matched sample (68\%). The Hertzsprung--Russell (HR) diagram for these stars is shown in Figure \ref{fig:HR}, with each point colored by its \Kepler-measured rotation period. Example isochrones from the \citet{bressan2012} grid are shown for two ages. A systematic offset of $\sim$0.5 magnitudes is found between the measured absolute $G$-band and the isochrone's main sequence. This offset is likely due to calibration differences between the nominal and actual $G$-band (A. Brown, private communication).
-%
-%
-%The HR-period diagram in Figure \ref{fig:HR} shows stars with a range of evolutionary states, and could help test post-main sequence angular momentum evolution models \citep[e.g.][]{donascimento2012}. Outliers in this diagram are either due to erroneous cross-matching in the \Kepler and Gaia catalogs, or represent interesting systems such as rare binary star configurations or stars that have undergone mergers or ingested giant planets \citep{massarotti2008,tayar2015}. For example, examining the 2 Micron All Sky Survey \citep[2MASS][]{2mass} image on SIMBAD for 
-%the rapidly rotating star at $T_{eff}=4500$ K, $M_G=4.5$ mag, $P_{rot}$=0.652 d, in Figure \ref{fig:HR} (KIC 07957709), this source appears highly contaminated with three point sources clustered within $\sim$10 arcseconds, likely leading to an erroneous position in the HR diagram, and possibly incorrect variability measurements with \Kepler.
-%Investigating all such outliers in Figure \ref{fig:HR} is beyond the scope of this work, but these targets are worth further study as they may reveal new physics.
-%
-%
-%
-%Main sequence stars were selected using a simple cut around 300 Myr isochrone. Given the systematic offset of $\sim$0.5 mag between the Myr isochrone and the observed $M_G$ values, a fairly wide band of stars ($0\le \Delta M_G \le 1$) was selected as being ``close to the main sequence''. The final sample included 440 stars. This simplistic cut is not a robust dwarf--giant, nor single--binary star separator, but serves to select a sample of mostly main sequence stars for the illustrative purpose of this work. More precise selection will require an improved isochrone track, as well as updated parallaxes from the full Gaia DR2.
-%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Extending the Spin-Down Gap}
-%A bimodal period distribution was first discovered by \citet{mcquillan2013} for \Kepler M dwarfs, who found a dearth of objects with periods around $\sim$25 days. Follow-up work by \citet{mcquillan2014} found this bimodality extended to K dwarfs, up to $T_{eff}\sim5500$. Figure \ref{fig:gyro} shows the rotation period distribution for the final 440 star sample of likely main sequence stars. The bimodality appears to extend smoothly through to the hottest stars in this sample. 
-%
-%While these periods for field stars were robustly measured by \citet{mcquillan2014} and others, the bimodality did not appear in previous \Kepler work due to the high contamination rate by subgiants for these bluer, hotter stars.  414 rotating stars had acceptable photometric and parallax uncertainties in TGAS, but were culled from this sample for having $M_G$ luminosities higher than the main sequence cut in \S3 above. Note that distributions of $\log g$ values from the Kepler Input Catalog \citep{brown2011a} for both the main sequence and subgiant stars were not statistically different.
+We use an isochrone from the Mesa Isochrones and Stellar Tracks suite \citep[MIST;][]{MIST} to choose likely main sequence stars in Figure \ref{fig:cmd}. Our favored model to represent the main sequence in this study had [Fe/H] = +0.25 and an age of $10^9$ years, and was chosen by-hand. Single, main sequence stars were selected in a region spanning 0.1 mag fainter and 0.4 mag brighter than the MIST isochrone, resulting in a final sample  of 16,248 stars for analysis of their rotation period distributions.
 
 
 
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Tracing the Period Bimodality}
+
+all the color--period diagrams vs distance:
 
 \begin{figure*}[]
 \centering
@@ -155,47 +134,51 @@ main seq stars chosen in 0.5 mag window
 \end{figure*}
 
 
-
-%\begin{figure}[]
-%\centering
-%\includegraphics[width=3.5in]{../figures/B_V_rot}
-%\caption{converted to B-V using Padova isochrone colors. 3 gyrochrones from \citet{meibom2009} with ages 300 Myr (dark red), 600 Myr (bright red), and 1.2 Gyr (blue) are shown.
-%}
-%%\label{fig:cmd}
-%\end{figure}
-%
-
+re-define gyrochrone in terms of 
+subtract 600myr gyrochrone off again, as in D17
 
 \begin{figure}[]
 \centering
-\includegraphics[width=3.5in]{../figures/delta_per}
+\includegraphics[width=3.5in]{../figures/delta_per_2gauss}
 \caption{Histograms of the log rotation periods after a 600 Myr gyrochrone was subtracted for stars in the same five distance bins shown in Figure \ref{fig:color_period}. The period bimodality for stars within 350 pc has two peaks similar to those found in \citet{davenport2017}, at -0.15 and +0.18 dex. The fast rotating peak (left side) declines sharply at further distances, however.
 }
 \label{fig:per_hist}
 \end{figure}
 
+these distance bins reach approximate distances above the galactic midplane of $\sim$60 pc in the nearest bin, to nearly 800 pc in the furthest bin, therefore spanning a large range in apparent age and possible star formation history
+%  61.70587735  102.55881602  120.06721831  190.10082747  797.0587735  pc
 
 
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Recalibrating Stellar Evolution Models}
 
-
-\begin{figure*}[]
+\begin{figure*}
 \centering
-\includegraphics[width=6.5in]{../figures/cmd_zoom}
-\caption{Left: Enlarged portion of the color--magnitude diagram from Figure \ref{fig:cmd} in a region centered near $\sim$0.75 M$_\odot$, with MIST isochrones at ages of $10^8$, $10^9$, and $10^10$ yr for comparison (blue, black, and red lines). Points are colored by their measured \Kepler rotation periods from \citet{mcquillan2014}. The main sequence shows significant scatter, as well as a gradient in rotation period. Right: Difference in $M_G$ from the $10^9$ yr MIST isochrone, shown as a function of their rotation periods (point color again indicates rotation period). Blue squares show an increase in the median $M_G$ offset in bins of increasing rotation period. Error bars shown are the standard deviation of $\Delta M_G$ in each bin.
+\includegraphics[width=6in]{../figures/cmd_zoom}
+\caption{
+Left: Enlarged portion of the color--magnitude diagram from Figure \ref{fig:cmd} in a region centered near $\sim$0.75 M$_\odot$, with stars are colored by their measured \Kepler rotation periods from \citet{mcquillan2014}.
+MIST isochrones at ages of $10^8$, $10^9$, and $10^10$ yr are shown for comparison (blue, black, and red lines). The predicted evolution of a 0.7 M$_\odot$ star is highlighted (black squares). The main sequence shows significant scatter, as well as a gradient in rotation period with slower rotators preferentially above the main sequence. 
+Right: Difference in $M_G$ from the $10^9$ yr MIST isochrone, shown as a function of their rotation periods (point color again indicates rotation period, as in Left panel). Blue squares show an increase in the median $M_G$ offset in bins of increasing rotation period. Error bars shown are the standard deviation of $\Delta M_G$ in each bin.
 }
 \label{fig:cmd_zoom}
 \end{figure*}
 
 
 
+A subtle feature that we noticed in Figure \ref{fig:cmd} is the apparent color gradient (i.e. rotation period gradient) between the single and binary star main sequence populations. In Figure \ref{fig:cmd} this appears as a yellow stripe (i.e. rotation periods of 30-40 days) between these blue-green sequences for systems with colors of $G_{BP} - G_{RP} \approx 1.5$. To exaggerate this feature, we have reproduced a portion of our color--magnitude diagram focused on the main sequence near this stellar color in the left panel of Figure \ref{fig:cmd_zoom}. A clear color gradient is present, with red points (slower rotators) appearing preferentially above the main sequence.
+The right panel of Figure \ref{fig:cmd_zoom} concretely demonstrates a correlation between the measured rotation period and the vertical offset (i.e. absolute magnitude) from the $10^9$ year MIST isochrone. Slower rotating stars are apparently brighter at a given stellar color.
 
-%\begin{figure}[]
-%\centering
-%\includegraphics[width=3.5in]{../figures/iso_age}
-%\caption{
-%}
-%%\label{fig:cmd}
-%\end{figure}
+We interpret this observation as being due to the increase in luminosity of stars across their main sequence lives, coupled with the angular momentum loss that underpins gyrochronology. Indeed, the sequence of MIST isochrones shown in Figure \ref{fig:cmd_zoom} with ages of $10^8$, $10^9$, and $10^10$ years clearly predicts an increase in brightness of the main sequence over time. 
+
+indeed, 0.7solarmass star traced over its life in both panels doesnt quite make sense. 
+inverting CMD into precise ages w/ Gaia beyond scope of this work, but this figure suggests the MS is too wide given a reasonable age range. consider: younger stars, presumably more metal rich, should be redder, moving in the wrong direction to the affect we see here. more colors and careful work needed... vertical action is OK for a star, but maybe some color impact we not considering.... hmm.
+
+however, looking at 0.7M period vs lum evolution, we see that the period seems to also drop off too rapidly compared to a model. combining the MM09 spin-down formulae for a 0.7M star, with the MIST isochrone evolution, we see  the period range should go out to 60--80 days to get the right amplitude offset. That implies that at a given age (or vertical action), the stars are rotating {\it faster} than expected. this is similar to the broken spin-down model suggested by \citep{van-saders2016}, and is potentially the first confirmation of this observation.
+
+
+
+
 
 
 
@@ -235,6 +218,6 @@ participating in the {\it Gaia} Multilateral Agreement.
 
 
 
-\bibliography{/Users/davenpj3/Dropbox/references}
+\bibliography{/Users/james/Dropbox/references}
 
 \end{document}
