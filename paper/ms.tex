@@ -118,8 +118,10 @@ We use an isochrone from the Mesa Isochrones and Stellar Tracks suite \citep[MIS
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Tracing the Period Bimodality}
+Using this sample of likely single, main sequence stars from \Kepler and {\em Gaia}, we are able to explore the distribution of rotation periods for stars as a function of their distance. The rotation period bimodality in \Kepler stars previously only detected for stars within $\sim$300 pc of the Sun due to the limits of available parallax data. Now with {\em Gaia} DR2, our sample of main sequence star with measured rotation periods in \Kepler extends out to over 2 kpc.
 
-all the color--period diagrams vs distance:
+In Figure \ref{fig:color_period} we present the period--color diagram for our sample of stars, split into six bins of projected distance. The first panel (0--350 pc) effectively reproduces the results of \citet{davenport2017} for bluer stars and \citet{mcquillan2014} for the redder stars. A gap in the observed rotation periods as a function of color is seen, at a period of approximately 5 days for $G_{BP}-G_{RP}\approx1$, 20 days for $G_{BP}-G_{RP}\approx2$, and increasing towards 30 days for the reddest stars in our sample. This gap corresponds with a line of approximately constant age, consistent with a gyrochrone with age $\sim$600 Myr \citep{davenport2017}. 
+
 
 \begin{figure*}[]
 \centering
@@ -127,30 +129,46 @@ all the color--period diagrams vs distance:
 \includegraphics[width=3.5in]{../figures/rot_dist_350}
 \includegraphics[width=3.5in]{../figures/rot_dist_525}
 \includegraphics[width=3.5in]{../figures/rot_dist_600}
+\includegraphics[width=3.5in]{../figures/rot_dist_700}
 \includegraphics[width=3.5in]{../figures/rot_dist_900}
-\caption{Color--period diagrams for our sample of likely main sequence stars, divided into bins of distance. Our nearest bin (within 350pc) is effectively the distance analyzed in \citet{davenport2017} using Gaia DR1, and clearly shows the rotation period bimodality for the entire sample. The brighter magnitude limit of the \Kepler sample results in redder (fainter) stars missing in our further distance bins. The rotation period bimodality can be seen in the 350-525 pc bin, but is not found in the bluer stars at further distances.
+\caption{Color--period diagrams for our sample of likely main sequence stars, divided into six bins of distance. Our nearest bin (within 350pc) is effectively the distance analyzed in \citet{davenport2017} using Gaia DR1, and clearly shows the rotation period bimodality for the entire sample. The brighter magnitude limit of the \Kepler sample results in redder (fainter) stars missing in our further distance bins. The rotation period bimodality can be seen in the 350-525 pc bin, but is not found in the bluer stars at further distances.
 }
 \label{fig:color_period}
 \end{figure*}
 
 
-re-define gyrochrone in terms of 
-subtract 600myr gyrochrone off again, as in D17
+The bimodality is still apparent in the second distance bin (350--525 pc), clearly visible in the redder stars, but seems to fade in the final three bins. Other structures in the period distributions are visible, however. For example, a thin sequence of stars with rotation periods near 10 days is faintly visible in the most distant bin (900--2500 pc) for stars with colors of $0.8<G_{BP}-G_{RP}<1.2$. This feature is due to the 1 Gyr open cluster NGC 6811 in the \Kepler field \citep{meibom2011}, whose distance is $\sim$1100 pc \citep{sandquist2016}.
+
+
+To better illustrate the evolution of rotation periods for all the stars between distance bins, in Figure \ref{fig:per_hist} we follow \citet{davenport2017} and subtract the rotation period of a 600 Myr gyrochrone. As no published gyrochronology model yet exists that has been tuned to the {\em Gaia} photometric colors, we adopt the same gyrochronology model of Eqn. 2 from \citet{meibom2009} used by \citet{davenport2017} to approximately trace the rotation period gap at 600 Myr as a function of $B-V$ color. We convert stars from the observed {\em Gaia} $G_{BP}-G_{RP}$ color to $B-V$ using the same 1 Gyr MIST isochrone model used to define the main sequence in Figure \ref{fig:cmd} above. 
+
+Our sample naturally becomes biased towards the bluer (brighter) stars as we reach larger distances. Since bluer stars have more rapid rotation and more dramatic period evolution, gyrochronology models are ``bent'' strongly for these stars, and thus the period bimodality (or other structures) become difficult to distinguish. \citet{davenport2017} used an ad-hoc modification of the gyrochrone model for the hottest stars to illustrate the existence of the period bimodality. However, in Figure \ref{fig:per_hist} we limit our analysis to stars with $0.8<B-V<1.5$ (approximately $0.9<G_{BP}-G_{RP}<2.2$, or $0.9>M_\odot> 0.5$), where the gyrochrone is most flat as a function of color. This color range was chosen to ensure ample stars were available in each distance bin, but without having to use the ad-hoc gyrochrone model correction from \citet{davenport2017}.
+
+Figure \ref{fig:per_hist} shows clearly that for the rotation period bimodality dominates for the nearest stars
 
 \begin{figure}[]
 \centering
 \includegraphics[width=3.5in]{../figures/delta_per_2gauss}
-\caption{Histograms of the log rotation periods after a 600 Myr gyrochrone was subtracted for stars in the same five distance bins shown in Figure \ref{fig:color_period}. The period bimodality for stars within 350 pc has two peaks similar to those found in \citet{davenport2017}, at -0.15 and +0.18 dex. The fast rotating peak (left side) declines sharply at further distances, however.
+\caption{Histograms of the log rotation periods after a 600 Myr gyrochrone was subtracted for stars in the same six distance bins shown in Figure \ref{fig:color_period} (faint lines). Two-gaussian models were fit to each histogram (bold lines). 
+The period bimodality for stars within 350 pc has two nearly equal peaks similar to those found in \citet{davenport2017}, at -0.15 and +0.18 dex. The fast rotating peak (left side) declines sharply at further distances.
 }
 \label{fig:per_hist}
 \end{figure}
 
+
+
+
+\Kepler field has a central Galactic latitude of $b\sim13.5^\circ$, pointing slightly above the Galactic midplane. 
 these distance bins reach approximate distances above the galactic midplane of $\sim$60 pc in the nearest bin, to nearly 800 pc in the furthest bin, therefore spanning a large range in apparent age and possible star formation history
 %  61.70587735  102.55881602  120.06721831  190.10082747  797.0587735  pc
+Both galaxy formation simulations \citep{ma2017} and observations of stars in the nearby Milky Way \citep{xiang2017} indicate that height above the midplane correlates strongly with the median ages for stars. However, since the \Kepler field is not very upwardly inclined, we not reaching significant {\it heights} above the plane. therefore we think the localization of the period bimodality is related to an age feature that is localized within the disk near the Sun, not representative of the total star formation history of our galaxy.
+
+\citet{lewis2015} for example show lots of variation in SFH in 100pc bins for M31
 
 
 
-\clearpage
+
+%\clearpage
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Recalibrating Stellar Evolution Models}
 
