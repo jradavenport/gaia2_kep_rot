@@ -44,9 +44,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars centered within a 0.5 mag region about a 1 Gyr isochrone. This removes many sub-giants and unresolved binary stars from the sample.
-The rotation period bimodality, originally discovered by \citet{mcquillan2013}, is recovered for stars out to 525pc, but is not detectable at further distances. 
-We also find a significant width in the stellar main sequence of $M_G\sim$0.25 mag, as well as a  increase in the average rotation period correlated with the $M_G$ offset at a given color (mass). We interpret this to be the measurable change in luminosity and loss of angular momentum as stars evolve along the main sequence, which may provide a new independent test of both stellar evolution and gyrochronlogy models.
+We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars centered within a 0.5 mag region about a 1 Gyr isochrone, removing many sub-giants and unresolved binary stars from the sample.
+The rotation period bimodality, originally discovered by \citet{mcquillan2013}, is recovered for stars out to 525pc, but is not detectable at further distances. This bimodality correlates with Galactic height as well, dropping strongly for stars above $Z>90$ pc
+We also find a significant width in the stellar main sequence of $M_G\sim$0.25 mag, as well as an increase in the average rotation period correlated with the $M_G$ offset at a given color (mass). We interpret this to be the measurable change in luminosity and loss of angular momentum as stars evolve along the main sequence, which may provide a new independent test of both stellar evolution and gyrochronlogy models.
 %This investigation represents the first step in understanding the star formation history of our solar neighborhood as traced through stellar angular momentum loss. 
 \end{abstract}
 
@@ -85,17 +85,17 @@ To select stars with good parallaxes, as well as high quality photometry from {\
 \item $\sigma(G_{RP}) /G_{RP} < 0.01$
 \end{itemize}
 
-Rather than simply use the inverse {\em Gaia} parallax values to measure the distance to sources, we use the improved distance prescription from \citet{bailer-jones2018}, who provided independent distances estimates for 1.33 billion {\em Gaia} sources using a weak prior on the distribution of stars in our galaxy. We follow their suggested use of the distance catalog, we only include sources with {\tt modality\_flag} == 1 (i.e. not a bimodal distance solution) and {\tt result\_flag} == 1 (i.e. well constrained distance).
+Rather than simply use the inverse {\em Gaia} parallax values to measure the distance to sources, we use the improved distance prescription from \citet{bailer-jones2018}, who provided independent distances estimates for 1.33 billion {\em Gaia} sources using a weak prior on the distribution of stars in our galaxy. We follow their suggested use of the distance catalog, we only include sources with {\tt modality\_flag} == 1 (i.e. not a bimodal distance solution) and {\tt result\_flag} == 1 (i.e. a well constrained distance).
               
 
-Our final sample contained 30,305 stars in Gaia DR2 with measured \Kepler rotation periods that passed these selection criteria. A color--magnitude diagram of this sample is presented in Figure \ref{fig:cmd}, with points colored by their rotation periods.
+Our final sample contained 30,305 stars in {\em Gaia} DR2 with measured \Kepler rotation periods that passed these selection criteria. A color--magnitude diagram (CMD) of this sample using the {\em Gaia} bands is presented in Figure \ref{fig:cmd}, with points colored by their measured \Kepler rotation periods.
 
 
 \begin{figure}[]
 \centering
 \includegraphics[width=3.6in]{../figures/cmd}
 \caption{
-Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014} sample that are included in Gaia DR2, colored by their measured rotation period. For reference we show a $10^9$ year MIST isochrone (black line) used to select likely main sequence, single stars (black line). A track of binary  stars is apparent $\sim$0.75 mag above the main sequence. As in \citet{davenport2017}, we find significant contamination of the rotation period sample for bluer stars by sub-giants.}
+Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014} sample that are included in {\em Gaia} DR2, colored by their measured rotation period. For reference we show a $10^9$ year MIST isochrone (black line) used to select likely main sequence, single stars (black line). A track of binary stars is apparent $\sim$0.75 mag above the main sequence. As in \citet{davenport2017}, we find significant contamination of the rotation period sample for bluer stars by sub-giants.}
 \label{fig:cmd}
 \end{figure}
 
@@ -188,11 +188,6 @@ Bottom: As in Figure \ref{fig:per_hist}, the distribution of rotation periods af
 
 
 
-
-
-\vspace{1in}
-%\clearpage
-
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Recalibrating Stellar Evolution Models}
 
@@ -202,25 +197,23 @@ Bottom: As in Figure \ref{fig:per_hist}, the distribution of rotation periods af
 \includegraphics[width=6in]{../figures/cmd_zoom}
 \caption{
 Left: Enlarged portion of the color--magnitude diagram from Figure \ref{fig:cmd} in a region centered near $\sim$0.75 M$_\odot$, with stars are colored by their measured \Kepler rotation periods from \citet{mcquillan2014}.
-MIST isochrones at ages of $10^8$, $10^9$, and $10^{10}$ yr are shown for comparison (blue, black, and red lines). The predicted evolution of a 0.7 M$_\odot$ star is highlighted (black triangles). %The main sequence shows significant scatter, as well as a gradient in rotation period with slower rotators preferentially above the main sequence. 
+MIST isochrones at ages of $10^8$, $10^9$, and $10^{10}$ yr are shown for comparison (blue, black, and red lines). The predicted evolution of a 0.7 M$_\odot$ star is highlighted (black triangles). 
 Right: Difference in $M_G$ from the $10^9$ yr MIST isochrone as a function of rotation period (point color again indicates rotation period, as in Left panel). Blue squares show an increase in the median $M_G$ offset in bins of increasing rotation period. Error bars shown are the standard deviation of $\Delta M_G$ in each bin. The 0.7 M$_\odot$ star brightness evolution is shown as a function of rotation evolution from \citet{meibom2009} (black triangles).
 }
 \label{fig:cmd_zoom}
 \end{figure*}
 
 A subtle feature we noticed in Figure \ref{fig:cmd} is the color gradient (i.e. rotation period gradient) for the stars in between the single and binary star main sequence populations. In Figure \ref{fig:cmd} this appears as a yellow stripe (i.e. rotation periods of 30-40 days) between these blue-green sequences for systems with colors of $G_{BP} - G_{RP} \approx 1.5$. To exaggerate this feature, we have reproduced a portion of our color--magnitude diagram focused on the main sequence near this stellar color in the left panel of Figure \ref{fig:cmd_zoom}. A clear color gradient is present, with red points (slower rotators) appearing preferentially above the main sequence.
-The right panel of Figure \ref{fig:cmd_zoom} concretely demonstrates a correlation between the measured rotation period and the vertical offset (i.e. absolute magnitude) from the $10^9$ year MIST isochrone. Slower rotating stars are apparently brighter at a given stellar color.
+The right panel of Figure \ref{fig:cmd_zoom} concretely demonstrates a correlation between the measured rotation period and the vertical offset (i.e. absolute magnitude) from the $10^9$ year MIST isochrone. Slower rotating stars are brighter at a given color.
 
-We interpret this observation as being due to the increase in luminosity of stars across their main sequence lives, coupled with the angular momentum loss that underpins gyrochronology. Indeed, the sequence of MIST isochrones shown in Figure \ref{fig:cmd_zoom} with ages of $10^8$, $10^9$, and $10^{10}$ years clearly predicts an increase in brightness of the main sequence over time. 
+We interpret this observation as being due to the increase in luminosity of stars across their main sequence lives, coupled with the angular momentum loss that underpins gyrochronology. Indeed, the three MIST isochrones shown in Figure \ref{fig:cmd_zoom} with ages of $10^8$, $10^9$, and $10^{10}$ years clearly predicts a net increase in brightness of the main sequence over time. We also track the color--magnitude evolution of a 0.7 $M_\odot$ star over its lifetime in Figure \ref{fig:cmd_zoom}, which shows the ``hook'' the star takes over its main sequence life. 
 
-indeed, 0.7solarmass star traced over its life in both panels doesnt quite make sense. 
-inverting CMD into precise ages w/ Gaia beyond scope of this work, but this figure suggests the MS is too wide given a reasonable age range. consider: younger stars, presumably more metal rich, should be redder, moving in the wrong direction to the affect we see here. more stellar masses and careful work needed... vertical spread in this parameter space is OK for a star, but maybe some color impact we not considering.... hmm.
+Inverting the color--magnitude diagram into precise ages for main sequence stars using {\em Gaia} is beyond scope of this work. However, Figure \ref{fig:cmd_zoom} clearly demonstrates that age information is not only present in the CMD for main sequence stars, but it may also be a larger amplitude effect than previously assumed. For example: younger, presumably more metal rich stars, should have redder main sequence colors. This in turn should move the entire main sequence track to the right in the CMD. However, we find older stars (slower rotators) appearing on the right side of the main sequence, due to their increased luminosity with age. The main sequence location of a star is therefore not simply due to its mass and metallicity in the {\em Gaia} era, but its age must also be taken into account.
 
-however, looking at 0.7M period vs lum evolution, we see that the period seems to also drop off too rapidly compared to a model. combining the MM09 spin-down formulae for a 0.7M star, with the MIST isochrone evolution, we see  the period range should go out to 60--80 days to get the right amplitude offset. That implies that at a given age (or vertical offset), the stars are rotating {\it slightly faster} than expected. This is qualitatively similar to the broken spin-down at a critical Rossby number model suggested by \citet{van-saders2016}, though we cannot definitively confirm such intriguing rotation evolution from this initial investigation.
-However, more detailed studies of \Kepler and K2 rotating stars matched to {\em Gaia} may be an ideal ensemble dataset to test the \citet{van-saders2016} model against.
+In Figure \ref{fig:cmd_zoom} we also show the change in brightness as a function of the rotation period for the stars in our zoomed-in CMD, as well as a prediction for the evolution of a 0.7 $M_\odot$ star. The spin-down model here is a combination of the MIST isochrone evolution, as well as the \citet{meibom2009} gyrochronology model. Note this spin-down model has been arbitrarily offset in the $\Delta M_G$ to roughly go through the observed data at the rapid rotation end.
+While \Kepler light curves generally are not able to measure rotation periods reliably with periods longer than 20 or 30 days, we find that stars with brightness (vertical) offsets in the CMD consistent with being several Gyr old have average rotation periods far shorter than the 60--80 days values predicted from the spin-down models.
 
-
-
+One interpretation of this result may be that the older stars are spinning {\it faster} than expected for stars their age. This is qualitatively similar to the model of broken spin-down occurring at a critical Rossby number suggested by \citet{van-saders2016}. Though we cannot definitively confirm such intriguing rotation evolution from this initial investigation given the observation bias for long periods from \Kepler, matching the {\em Gaia} CMD with other rotation period measurements may provide an ideal dataset to test the \citet{van-saders2016} model against. The ability to simultaneously constrain the precise CMD location and surface rotation rate, as with the sample demonstrated here, may also be a valuable method for calibrating a new generation of isochrone and gyrochronology models.
 
 
 
@@ -228,6 +221,7 @@ However, more detailed studies of \Kepler and K2 rotating stars matched to {\em 
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
+%% HERE
 
 % from paper1
 %
@@ -255,8 +249,7 @@ JRAD is supported by an NSF Astronomy and Astrophysics Postdoctoral Fellowship u
 
 This work made use of the \url{gaia-kepler.fun} crossmatch database, created by Megan Bedell.
 
-This project was developed as part of the 2018 NYC Gaia Sprint, hosted by the Center for Computational Astrophysics at the Simons Foundation in New York City.
-
+This project was developed in part at the 2018 Gaia Sprint, hosted by the eScience and DIRAC Institutes at the University of Washington, Seattle, in parallel with the 2018 NYC Gaia Sprint, hosted by the Center for Computational Astrophysics at the Simons Foundation in New York City.
 
 This work has made use of data from the European Space Agency (ESA) mission
 {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia}
