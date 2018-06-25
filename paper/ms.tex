@@ -44,10 +44,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars within a 0.5 mag region about a 1 Gyr isochrone. This removes sub-giants and unresolved binary stars from the sample.
+We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars centered within a 0.5 mag region about a 1 Gyr isochrone. This removes many sub-giants and unresolved binary stars from the sample.
 The rotation period bimodality, originally discovered by \citet{mcquillan2013}, is recovered for stars out to 525pc, but is not detectable at further distances. 
-We also find a significant width in the stellar main sequence of $M_G\sim$0.25 mag, as well as a  increase in the average rotation period correlated with the $M_G$ offset at a given color (mass). We interpret this to be the measurable change in luminosity and loss of angular momentum as stars evolve along the main sequence, which may provide a new independent test of stellar evolution and gyrochronlogy models.
-This investigation represents the first step in understanding the star formation history of our solar neighborhood as traced through stellar angular momentum loss. 
+We also find a significant width in the stellar main sequence of $M_G\sim$0.25 mag, as well as a  increase in the average rotation period correlated with the $M_G$ offset at a given color (mass). We interpret this to be the measurable change in luminosity and loss of angular momentum as stars evolve along the main sequence, which may provide a new independent test of both stellar evolution and gyrochronlogy models.
+%This investigation represents the first step in understanding the star formation history of our solar neighborhood as traced through stellar angular momentum loss. 
 \end{abstract}
 
 
@@ -55,16 +55,16 @@ This investigation represents the first step in understanding the star formation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-The \Kepler mission \citep{borucki2010} a new era for enabling detailed study of angular momentum loss in low-mass stars. long noted as a means to possibly age-date stars (gyro), open clusters give hope that this general model works for low-mass stars
-many Qs exist about details. these include Qs about initial rotation period distribution \citep[e.g.][]{barnes2010,matt2015}, the specific prescription for spin-down \citep{angus2015}, and exploring the efficiency of this angular momentum loss mechanism at old ages \citep{van-saders2016}.
+The \Kepler mission \citep{borucki2010}, through its unmatched combination of photometric precision and years-long observation baseline, has produced the largest sample of rotating stars to date. Stellar rotation has long been noted as a means to possibly age-date stars due to their constant angular momentum loss via winds
+\citep{skumanich1972}. While studies of open clusters give hope that this ``gyrochronology'' model broadly works for solar-type and lower-mass stars, many uncertainties exist about the details of this spin-down and its utility as a clock. These include questions about the initial rotation period distribution for stars \citep[e.g.][]{barnes2010,matt2015}, the specific analytic prescription for modeling the spin-down \citep{angus2015}, and exploring the efficiency of this angular momentum loss mechanism at older ages \citep{van-saders2016}.
 
 
-one of the most compelling results from the rotation work in \Kepler is the discovery of a period bimodality. 
-\citet{mcquillan2013} found bimodal feature, in M and later K stars \citep{mcquillan2014}. Davenport used Gaia DR1 to remove contamination from sub-giants and found the feature in G dwarfs. this feature proposed to be either a new short-lived transition or instability phase of momentum loss, or a signature of star formation history imprinted in the present-day rotation period distribution. However, to date this feature has only been observed in the \Kepler rotation period catalog, and most critically only for stars within $\sim$300 pc.
+One of the most compelling results from the rotating star sample in \Kepler is the discovery of a bimodal period distribution.
+\citet{mcquillan2013} first found a bimodality in the distribution of field M dwarfs with periods between $\sim$10 and $\sim$50 days. This feature was also found in the \Kepler field K dwarfs in \citep{mcquillan2014}. Using Gaia DR1, \citet{davenport2017} was able to remove contaminating sub-giants from the rotation sample and found the bimodality extended to the G dwarfs as well. This bimodal rotation period distribution is either a new short-lived transition or instability phase of angular momentum loss, or a signature of star formation history imprinted in the present-day rotation period distribution. However, to date this feature has only been observed in the \Kepler rotation period catalog, and most critically only for stars within $\sim$300 pc.
 
 
 
-In this paper we follow the work of \citet{davenport2017} in studying the \Kepler rotation period sample using astrometric data from the {\em Gaia} mission \citep{gaia}. By matching the \citet{mcquillan2014} rotation period catalog to the newest data from {\em Gaia} Data Release 2 \citep{gaia_dr2}, we can use precise distances for essentially every star to select likely main sequence dwarfs to distances well over 1 kpc. Importantly this filters out both sub-giants (the main contaminant noted by \cite{davenport2017}), and unresolved binary stars.
+In this paper we follow the work of \citet{davenport2017} in refining the \Kepler rotation period sample using astrometric data from the {\em Gaia} mission \citep{gaia}. By matching the \citet{mcquillan2014} rotation period catalog to the newest data from {\em Gaia} Data Release 2 \citep{gaia_dr2}, we can use precise distances for essentially every star to select the most-likely main sequence dwarfs to distances well over 1 kpc. Importantly this filters out both sub-giants, the main contaminant noted by \cite{davenport2017}, and unresolved binary stars.
 Here we demonstrate the power of such a combined time-domain and astrometric sample for constraining the detailed evolution of main sequence stars themselves, and exploring the star formation history of the Milky Way.
  
 
@@ -208,7 +208,7 @@ Right: Difference in $M_G$ from the $10^9$ yr MIST isochrone as a function of ro
 \label{fig:cmd_zoom}
 \end{figure*}
 
-A subtle feature that we noticed in Figure \ref{fig:cmd} is the apparent color gradient (i.e. rotation period gradient) between the single and binary star main sequence populations. In Figure \ref{fig:cmd} this appears as a yellow stripe (i.e. rotation periods of 30-40 days) between these blue-green sequences for systems with colors of $G_{BP} - G_{RP} \approx 1.5$. To exaggerate this feature, we have reproduced a portion of our color--magnitude diagram focused on the main sequence near this stellar color in the left panel of Figure \ref{fig:cmd_zoom}. A clear color gradient is present, with red points (slower rotators) appearing preferentially above the main sequence.
+A subtle feature we noticed in Figure \ref{fig:cmd} is the color gradient (i.e. rotation period gradient) for the stars in between the single and binary star main sequence populations. In Figure \ref{fig:cmd} this appears as a yellow stripe (i.e. rotation periods of 30-40 days) between these blue-green sequences for systems with colors of $G_{BP} - G_{RP} \approx 1.5$. To exaggerate this feature, we have reproduced a portion of our color--magnitude diagram focused on the main sequence near this stellar color in the left panel of Figure \ref{fig:cmd_zoom}. A clear color gradient is present, with red points (slower rotators) appearing preferentially above the main sequence.
 The right panel of Figure \ref{fig:cmd_zoom} concretely demonstrates a correlation between the measured rotation period and the vertical offset (i.e. absolute magnitude) from the $10^9$ year MIST isochrone. Slower rotating stars are apparently brighter at a given stellar color.
 
 We interpret this observation as being due to the increase in luminosity of stars across their main sequence lives, coupled with the angular momentum loss that underpins gyrochronology. Indeed, the sequence of MIST isochrones shown in Figure \ref{fig:cmd_zoom} with ages of $10^8$, $10^9$, and $10^{10}$ years clearly predicts an increase in brightness of the main sequence over time. 
