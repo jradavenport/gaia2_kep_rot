@@ -46,8 +46,8 @@
 \begin{abstract}
 We have matched the astrometric data from {\em Gaia} Data Release 2 to the sample of stars with measured rotation periods from \Kepler. Using 30,305 stars with good distance estimates, we select 16,248 as being likely main sequence single stars centered within a 0.5 mag region about a 1 Gyr isochrone, removing many sub-giants and unresolved binary stars from the sample.
 The rotation period bimodality, originally discovered by \citet{mcquillan2013}, is clearly recovered for stars out to 525pc, but is not detectable at further distances. This bimodality correlates with Galactic height as well, dropping strongly for stars above $Z>90$ pc.
-We also find a significant width in the stellar main sequence of $\Delta M_G\sim$0.25 mag, as well as a coherent gradient of increasing rotation periods diagonal to the main sequence.
-We interpret this to be the simultaneous change in luminosity and loss of angular momentum as stars evolve along the main sequence. The diagonal offset from the main sequence is unexpected, however, and may provide a new independent test of both stellar evolution and gyrochronlogy models.
+We also find a significant width in the stellar main sequence of $\Delta M_G\sim$0.25 mag, as well as a coherent gradient of increasing rotation periods orthogonal to the main sequence.
+We interpret this as a signature of stellar angular momentum loss over time, implying a corresponding diagonal age gradient across the main sequence. Stellar evolution models predict changes in color and luminosity that are consistent in amplitude, but not in direction, with those required to produce the gradient we have detected. This rotation gradient suggests that main sequence evolution produces offsets in color--magnitude space that are significantly more orthogonal to the zero-age main sequence than models currently predict, and may provide new tests for both stellar evolution and gyrochronology models.
 \end{abstract}
 
 
@@ -101,7 +101,8 @@ Our final sample contained 30,305 stars in {\em Gaia} DR2 with measured \Kepler 
 
 \begin{figure}[]
 \centering
-\includegraphics[width=3.6in]{../figures/cmd}
+%\includegraphics[width=3.6in]{../figures/cmd}
+\includegraphics[width=3.6in]{fig1}
 \caption{
 Color--magnitude diagram for 30,305 \Kepler stars from the \citet{mcquillan2014} sample that are included in {\em Gaia} DR2, colored by their measured rotation period. For reference we show a $10^9$ year MIST isochrone used to select likely main sequence, single stars (black line). As in \citet{davenport2017}, the bluer stars in the sample are significantly contaminated by sub-giants. 
 A track of binary stars is apparent $\sim$0.75 mag above the main sequence. The inset figure highlights a portion of the single star and equal-mass binary main sequences.
@@ -140,12 +141,18 @@ In Figure \ref{fig:color_period} we present the period--color diagram for our sa
 
 \begin{figure*}[]
 \centering
-\includegraphics[width=3.5in]{../figures/rot_dist_0}
-\includegraphics[width=3.5in]{../figures/rot_dist_350}
-\includegraphics[width=3.5in]{../figures/rot_dist_525}
-\includegraphics[width=3.5in]{../figures/rot_dist_600}
-\includegraphics[width=3.5in]{../figures/rot_dist_700}
-\includegraphics[width=3.5in]{../figures/rot_dist_900}
+%\includegraphics[width=3.5in]{../figures/rot_dist_0}
+%\includegraphics[width=3.5in]{../figures/rot_dist_350}
+%\includegraphics[width=3.5in]{../figures/rot_dist_525}
+%\includegraphics[width=3.5in]{../figures/rot_dist_600}
+%\includegraphics[width=3.5in]{../figures/rot_dist_700}
+%\includegraphics[width=3.5in]{../figures/rot_dist_900}
+\includegraphics[width=3.5in]{fig2a}
+\includegraphics[width=3.5in]{fig2b}
+\includegraphics[width=3.5in]{fig2c}
+\includegraphics[width=3.5in]{fig2d}
+\includegraphics[width=3.5in]{fig2e}
+\includegraphics[width=3.5in]{fig2f}
 \caption{Color--period diagrams for our sample of likely main sequence stars, divided into six bins of distance. Our nearest bin (within 350pc) is effectively the distance analyzed in \citet{davenport2017} using Gaia DR1, and clearly shows the rotation period bimodality for the entire sample. The brighter magnitude limit of the \Kepler sample results in redder (fainter) stars missing in our further distance bins. The rotation period bimodality can be seen in the 350-525 pc bin, but is not found in the bluer stars at further distances.
 }
 \label{fig:color_period}
@@ -155,8 +162,10 @@ In Figure \ref{fig:color_period} we present the period--color diagram for our sa
 
 \begin{figure*}[!ht]
 \centering
-\includegraphics[width=3.5in]{../figures/delta_per_2gauss}
-\includegraphics[width=3.5in]{../figures/delta_per_2gauss_Z}
+%\includegraphics[width=3.5in]{../figures/delta_per_2gauss}
+%\includegraphics[width=3.5in]{../figures/delta_per_2gauss_Z}
+\includegraphics[width=3.5in]{fig3a}
+\includegraphics[width=3.5in]{fig3b}
 \caption{Left: Distribution of the log rotation periods after a 600 Myr gyrochrone was subtracted, using the same distance bins shown in Figure \ref{fig:color_period} (faint lines). Two-gaussian models were fit to each histogram (bold lines). 
 The rotation period bimodality for stars within 350 pc has two nearly equal peaks similar to those found in \citet{davenport2017}, at -0.15 and +0.18 dex. The fast rotating peak (left side) declines sharply at further distances.
 Right: Same as Left, but in bins of Galactic height above the plane (Z). The drop-off of fast rotating, young stars is even more pronounced as a function of height.
@@ -189,8 +198,10 @@ To further understanding the spatial extent of this age-related feature, in Figu
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=3.4in]{../figures/dist_Z}
-\includegraphics[width=3.5in]{../figures/delta_per_subZ}
+%\includegraphics[width=3.4in]{../figures/dist_Z}
+%\includegraphics[width=3.5in]{../figures/delta_per_subZ}
+\includegraphics[width=3.4in]{fig4a}
+\includegraphics[width=3.5in]{fig4b}
 \caption{
 Top: Galactic height versus distance for the stars in our sample. Two approximately equal subsets of stars near the Galactic mid-plane have been highlighted, with distances of $d<300$ pc (red), and $300<d<525$ pc (blue).
 Bottom: As in Figure \ref{fig:per_hist}, the distribution of rotation periods after a 600 Myr gyrochrone was subtracted (faint lines), and with two-Gaussian fits (bold lines) for the same subsets of stars as above. The period bidmodality is seen in both distance bins, suggesting it is not localized around the Sun.
@@ -207,7 +218,8 @@ Bottom: As in Figure \ref{fig:per_hist}, the distribution of rotation periods af
 
 \begin{figure*}
 \centering
-\includegraphics[width=7in]{../figures/cmd_zoom}
+%\includegraphics[width=7in]{../figures/cmd_zoom}
+\includegraphics[width=7in]{fig5}
 \caption{
 {\bf Left:} Enlarged portion of the color--magnitude diagram from Figure \ref{fig:cmd} in a region centered near $\sim$0.75 M$_\odot$, with main sequence stars colored by their measured rotation periods from \citet{mcquillan2014}.
 MIST isochrones at ages of $10^8$, $10^9$, and $10^{10}$ yr are shown for comparison (blue, black, and red lines). The predicted evolution of a 0.7 M$_\odot$ star is highlighted (black triangles). 
@@ -223,9 +235,17 @@ However, as the right panel in Figure \ref{fig:cmd_zoom} shows, the MIST models 
 
 In the center and right panels of Figure \ref{fig:cmd_zoom} we show a prediction of the brightness and color evolution of a 0.7 $M_\odot$ star as a function of its rotation period over time. The predicted evolution here is a combination of the MIST isochrone models from $10^8$ to $10^{10}$ years, as well as the \citet{meibom2009} gyrochronology model over this same time window. Note this  combined model has been arbitrarily offset in $\Delta M_G$ and $\Delta(G_{BP} - G_{RP})$ in the middle and right panels, respectively, to approximately match the CMD position observed for the rapid rotators. 
 
-These data challenge our main sequence model evolution in two ways. Firstly, the diagonal gradient from the main sequence in rotation period is in conflict with the evolution predicted from MIST. The stellar evolution model shows that a star should evolve essentially {\it along} the main sequence track, as in the left panel of Figure \ref{fig:cmd_zoom}. The tension with our observed sample is highlighted in the right panel of Figure \ref{fig:cmd_zoom}, where the predicted colors for old stars get bluer, while our slice through the observed rotation period sample shows older stars being redder.
+These data challenge our main sequence model evolution in two ways. Firstly, the diagonal gradient from the main sequence in rotation period is in conflict with the evolution predicted from MIST. The stellar evolution model shows that a star should evolve essentially {\it along} the main sequence track, as in the left panel of Figure \ref{fig:cmd_zoom}. The tension with our observed sample is highlighted in the right panel of Figure \ref{fig:cmd_zoom}, where the model predictions show stars becoming bluer in $G_{BP}-G_{RP}$ color as they age, while our slice through the observed rotation period sample suggests the older stars are instead redder.
 
-This tension in the CMD evolution is compounded when we consider stellar metallicity, which we have not varied in our MIST model realization. Younger, presumably more metal rich stars should have redder optical colors on the main sequence, while older metal poor stars should be more blue. Instead we find that older, slower rotating stars are redder and brighter than their rapidly rotating counterparts. While we do not have independent metallicity constraints for the \Kepler stars in this sample, Figure \ref{fig:cmd_zoom} shows that age may have as big of a factor as metallicity in the precise CMD location of main sequence stars. Likewise, stellar evolution models do not appear to reproduce the CMD positions for main sequence, low-mass stars of all ages.
+%
+We note that correlations in stellar rotation, age, and color have previously been reported for young clusters \citep[e.g.][]{stauffer2003,covey2016}.
+However, these detections do not provide a straightforward explanation for the offset we detect in the {\em Gaia} CMD for field stars.
+\citet{stauffer2003} detected an offset similar to the gradient we have observed for K dwarfs in the Pleiades and Praesepe open clusters, where younger, more rapidly rotating Pleiades members appear bluer/fainter in the ($B-V$, $V$) CMD than their older, more slowly rotating analogs in Praesepe.  
+\citet{stauffer2003} suggest this offset reflects the influence of hot and cool star spots on a star's colors, as supported by the wavelength dependence of the offset. The color offset disappears in the ($V-I$, $V$) CMD and reverses in the ($V-K$, $V$) CMD, where the faster rotating Pleiades stars appear redder/brighter than their Praesepe counterparts.  
+\citet{covey2016} extended this analysis to demonstrate that a Pleiades member's rotation period correlates with its relative position on the $V-K$ vs. $V$ cluster sequence, further supporting a picture in which rapidly rotating, magnetically active stars display different photospheric properties than their slower rotating, less magnetically active brethren.  The CMD gradient reported here are not easily explained as photospheric signatures of rotationally induced magnetic activity, however, because the gradients are most prominent among the most slowly rotating stars in the sample.  Indeed, we see no significant changes in the color or magnitude of stars with rotation periods shorter than $\sim$20 days; it is only among the more slowly rotating stars where color and luminosity gradients are significantly detected.  These slowly rotating stars presumably possess the lowest levels of magnetic activity, and thus have smaller, less prominent starspots to drive changes in the star's bulk photospheric properties. 
+
+
+This tension in the CMD evolution is compounded when we consider stellar metallicity, which we have not varied in our MIST model realization. Younger, presumably more metal rich stars should have redder optical colors on the main sequence, while older, more metal poor stars should be bluer. Instead we find that oldest, more slowly rotating stars are redder and brighter than their rapidly rotating counterparts. While we do not have independent metallicity constraints for the \Kepler stars in this sample, Figure \ref{fig:cmd_zoom} shows that age may be justa s important as metallicity in determining the precise CMD location for main main sequence stars. Likewise, stellar evolution models do not appear to reproduce the CMD positions for main sequence, low-mass stars of all ages.
 
 
 The second, more subtle challenge presented by these data is the rotation periods observed for presumably older stars. 
@@ -239,7 +259,6 @@ One possible interpretation of this result as observed here is that the older st
 
 
 %%%%%%%%%%%%%%%%%%%%%%
-\vspace{0.5in}
 \section{Discussion}
 
 Using a sample of 16,248 single main sequence stars with measured rotation periods from \Kepler and parallaxes from {\em Gaia} DR2, we have begun to explore the spatial distribution of stellar ages near the Sun using gyrochronology. The bimodality in rotation periods first reported by \citet{mcquillan2013} appear to be constrained to low Galactic scaleheights, rather than in an obvious bubble centered around the Sun. Since height above the Galactic plane is assumed to be related to age, this is consistent with the rotation period bimodality being a direct tracer of the star formation history, and indicates a burst of star formation within the past $\sim$600 Myr within the Galactic disk.
@@ -257,6 +276,7 @@ Our work presents strong motivation for a new generation of stellar evolution an
 
 %%%%%%%%%%%%%%%%%
 \acknowledgments
+The authors wish to thank Garrett Somers, Stephanie Douglas, Aaron Dotter, and Jennifer van Saders for their helpful suggestions and discussions during the preparation of this manuscript.
 
 JRAD is supported by an NSF Astronomy and Astrophysics Postdoctoral Fellowship under award AST-1501418. 
 
@@ -275,6 +295,203 @@ participating in the {\it Gaia} Multilateral Agreement.
 \software{Python, IPython \citep{ipython}, NumPy \citep{numpy}, Matplotlib \citep{matplotlib}, SciPy \citep{scipy}, Pandas \citep{pandas}, Astropy \citep{astropy}}
 
 
-\bibliography{/Users/james/Dropbox/references}
+
+%\bibliography{/Users/james/Dropbox/references}
+
+
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Aigrain} {et~al.}(2015){Aigrain}, {Llama}, {Ceillier}, {Chagas},
+  {Davenport}, {Garc{\'{\i}}a}, {Hay}, {Lanza}, {McQuillan}, {Mazeh}, {de
+  Medeiros}, {Nielsen}, \& {Reinhold}}]{aigrain2015}
+{Aigrain}, S., {Llama}, J., {Ceillier}, T., {et~al.} 2015, \mnras, 450, 3211
+
+\bibitem[{{Anderson} {et~al.}(2017){Anderson}, {Hogg}, {Leistedt},
+  {Price-Whelan}, \& {Bovy}}]{anderson2017}
+{Anderson}, L., {Hogg}, D.~W., {Leistedt}, B., {Price-Whelan}, A.~M., \&
+  {Bovy}, J. 2017, ArXiv e-prints, arXiv:1706.05055
+
+\bibitem[{{Angus} {et~al.}(2015){Angus}, {Aigrain}, {Foreman-Mackey}, \&
+  {McQuillan}}]{angus2015}
+{Angus}, R., {Aigrain}, S., {Foreman-Mackey}, D., \& {McQuillan}, A. 2015,
+  \mnras, 450, 1787
+
+\bibitem[{{Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+  {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
+  {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
+  {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
+  {Deil}, {Woillez}, {Conseil}, {Kramer}, {Turner}, {Singer}, {Fox}, {Weaver},
+  {Zabalza}, {Edwards}, {Azalee Bostroem}, {Burke}, {Casey}, {Crawford},
+  {Dencheva}, {Ely}, {Jenness}, {Labrie}, {Lim}, {Pierfederici}, {Pontzen},
+  {Ptak}, {Refsdal}, {Servillat}, \& {Streicher}}]{astropy}
+{Astropy Collaboration}, {Robitaille}, T.~P., {Tollerud}, E.~J., {et~al.} 2013,
+  \aap, 558, A33
+
+\bibitem[{{Bailer-Jones} {et~al.}(2018){Bailer-Jones}, {Rybizki}, {Fouesneau},
+  {Mantelet}, \& {Andrae}}]{bailer-jones2018}
+{Bailer-Jones}, C.~A.~L., {Rybizki}, J., {Fouesneau}, M., {Mantelet}, G., \&
+  {Andrae}, R. 2018, ArXiv e-prints, arXiv:1804.10121
+
+\bibitem[{{Barnes}(2010)}]{barnes2010}
+{Barnes}, S.~A. 2010, \apj, 722, 222
+
+\bibitem[{{Borucki} {et~al.}(2010){Borucki}, {Koch}, {Basri}, {Batalha},
+  {Brown}, {Caldwell}, {Caldwell}, {Christensen-Dalsgaard}, {Cochran},
+  {DeVore}, {Dunham}, {Dupree}, {Gautier}, {Geary}, {Gilliland}, {Gould},
+  {Howell}, {Jenkins}, {Kondo}, {Latham}, {Marcy}, {Meibom}, {Kjeldsen},
+  {Lissauer}, {Monet}, {Morrison}, {Sasselov}, {Tarter}, {Boss}, {Brownlee},
+  {Owen}, {Buzasi}, {Charbonneau}, {Doyle}, {Fortney}, {Ford}, {Holman},
+  {Seager}, {Steffen}, {Welsh}, {Rowe}, {Anderson}, {Buchhave}, {Ciardi},
+  {Walkowicz}, {Sherry}, {Horch}, {Isaacson}, {Everett}, {Fischer}, {Torres},
+  {Johnson}, {Endl}, {MacQueen}, {Bryson}, {Dotson}, {Haas}, {Kolodziejczak},
+  {Van Cleve}, {Chandrasekaran}, {Twicken}, {Quintana}, {Clarke}, {Allen},
+  {Li}, {Wu}, {Tenenbaum}, {Verner}, {Bruhweiler}, {Barnes}, \&
+  {Prsa}}]{borucki2010}
+{Borucki}, W.~J., {Koch}, D., {Basri}, G., {et~al.} 2010, Science, 327, 977
+
+\bibitem[{{Choi} {et~al.}(2016){Choi}, {Dotter}, {Conroy}, {Cantiello},
+  {Paxton}, \& {Johnson}}]{MIST}
+{Choi}, J., {Dotter}, A., {Conroy}, C., {et~al.} 2016, \apj, 823, 102
+
+\bibitem[{{Choi} {et~al.}(2015){Choi}, {Dalcanton}, {Williams}, {Weisz},
+  {Skillman}, {Fouesneau}, \& {Dolphin}}]{choi2015}
+{Choi}, Y., {Dalcanton}, J.~J., {Williams}, B.~F., {et~al.} 2015, \apj, 810, 9
+
+\bibitem[{{Covey} {et~al.}(2016){Covey}, {Ag{\"u}eros}, {Law}, {Liu}, {Ahmadi},
+  {Laher}, {Levitan}, {Sesar}, \& {Surace}}]{covey2016}
+{Covey}, K.~R., {Ag{\"u}eros}, M.~A., {Law}, N.~M., {et~al.} 2016, \apj, 822,
+  81
+
+\bibitem[{{Davenport}(2017)}]{davenport2017}
+{Davenport}, J.~R.~A. 2017, \apj, 835, 16
+
+\bibitem[{{do Nascimento} {et~al.}(2012){do Nascimento}, {da Costa}, \&
+  {Castro}}]{donascimento2012}
+{do Nascimento}, J.-D., {da Costa}, J.~S., \& {Castro}, M. 2012, \aap, 548, L1
+
+\bibitem[{{Gaia Collaboration} {et~al.}(2018){Gaia Collaboration}, {Brown},
+  {Vallenari}, {Prusti}, {de Bruijne}, {Babusiaux}, \&
+  {Bailer-Jones}}]{gaia_dr2}
+{Gaia Collaboration}, {Brown}, A.~G.~A., {Vallenari}, A., {et~al.} 2018, ArXiv
+  e-prints, arXiv:1804.09365
+
+\bibitem[{{Gaia Collaboration} {et~al.}(2016){Gaia Collaboration}, {Prusti},
+  {de Bruijne}, {Brown}, {Vallenari}, {Babusiaux}, {Bailer-Jones}, {Bastian},
+  {Biermann}, {Evans}, \& et~al.}]{gaia}
+{Gaia Collaboration}, {Prusti}, T., {de Bruijne}, J.~H.~J., {et~al.} 2016,
+  \aap, 595, A1
+
+\bibitem[{{Gilmore} \& {Reid}(1983)}]{gilmore1983}
+{Gilmore}, G., \& {Reid}, N. 1983, \mnras, 202, 1025
+
+\bibitem[{{Howell} {et~al.}(2014){Howell}, {Sobeck}, {Haas}, {Still},
+  {Barclay}, {Mullally}, {Troeltzsch}, {Aigrain}, {Bryson}, {Caldwell},
+  {Chaplin}, {Cochran}, {Huber}, {Marcy}, {Miglio}, {Najita}, {Smith},
+  {Twicken}, \& {Fortney}}]{howell2014}
+{Howell}, S.~B., {Sobeck}, C., {Haas}, M., {et~al.} 2014, \pasp, 126, 398
+
+\bibitem[{Hunter(2007)}]{matplotlib}
+Hunter, J.~D. 2007, Computing In Science \& Engineering, 9, 90
+
+\bibitem[{{Jao} {et~al.}(2018){Jao}, {Henry}, {Gies}, \& {Hambly}}]{jao2018}
+{Jao}, W.-C., {Henry}, T.~J., {Gies}, D.~R., \& {Hambly}, N.~C. 2018, ArXiv
+  e-prints, arXiv:1806.07792
+
+\bibitem[{Jones {et~al.}(2001--)Jones, Oliphant, Peterson, {et~al.}}]{scipy}
+Jones, E., Oliphant, T., Peterson, P., {et~al.} 2001--, {SciPy}: Open source
+  scientific tools for {Python}, , , [Online; accessed <today>]
+
+\bibitem[{{Lanzafame} {et~al.}(2018){Lanzafame}, {Distefano}, {Messina},
+  {Pagano}, {Lanza}, {Eyer}, {Guy}, {Rimoldini}, {Lecoeur-Taibi}, {Holl}, {de
+  Fombelle}, {Nienartowicz}, {Marchal}, \& {Mowlavi}}]{lanzafame2018}
+{Lanzafame}, A.~C., {Distefano}, E., {Messina}, S., {et~al.} 2018, ArXiv
+  e-prints, arXiv:1805.00421
+
+\bibitem[{{Lewis} {et~al.}(2015){Lewis}, {Dolphin}, {Dalcanton}, {Weisz},
+  {Williams}, {Bell}, {Seth}, {Simones}, {Skillman}, {Choi}, {Fouesneau},
+  {Guhathakurta}, {Johnson}, {Kalirai}, {Leroy}, {Monachesi}, {Rix}, \&
+  {Schruba}}]{lewis2015}
+{Lewis}, A.~R., {Dolphin}, A.~E., {Dalcanton}, J.~J., {et~al.} 2015, \apj, 805,
+  183
+
+\bibitem[{{Lurie} {et~al.}(2017){Lurie}, {Vyhmeister}, {Hawley}, {Adilia},
+  {Chen}, {Davenport}, {Juri{\'c}}, {Puig-Holzman}, \&
+  {Weisenburger}}]{lurie2017}
+{Lurie}, J.~C., {Vyhmeister}, K., {Hawley}, S.~L., {et~al.} 2017, \aj, 154, 250
+
+\bibitem[{{Ma} {et~al.}(2017){Ma}, {Hopkins}, {Wetzel}, {Kirby},
+  {Angl{\'e}s-Alc{\'a}zar}, {Faucher-Gigu{\`e}re}, {Kere{\v s}}, \&
+  {Quataert}}]{ma2017}
+{Ma}, X., {Hopkins}, P.~F., {Wetzel}, A.~R., {et~al.} 2017, \mnras, 467, 2430
+
+\bibitem[{{Matt} {et~al.}(2015){Matt}, {Brun}, {Baraffe}, {Bouvier}, \&
+  {Chabrier}}]{matt2015}
+{Matt}, S.~P., {Brun}, A.~S., {Baraffe}, I., {Bouvier}, J., \& {Chabrier}, G.
+  2015, \apjl, 799, L23
+
+\bibitem[{McKinney(2010)}]{pandas}
+McKinney, W. 2010, in Proceedings of the 9th Python in Science Conference, ed.
+  S.~van~der Walt \& J.~Millman, 51 -- 56
+
+\bibitem[{{McQuillan} {et~al.}(2013){McQuillan}, {Aigrain}, \&
+  {Mazeh}}]{mcquillan2013}
+{McQuillan}, A., {Aigrain}, S., \& {Mazeh}, T. 2013, \mnras, 432, 1203
+
+\bibitem[{{McQuillan} {et~al.}(2014){McQuillan}, {Mazeh}, \&
+  {Aigrain}}]{mcquillan2014}
+{McQuillan}, A., {Mazeh}, T., \& {Aigrain}, S. 2014, \apjs, 211, 24
+
+\bibitem[{{Meibom} {et~al.}(2009){Meibom}, {Mathieu}, \&
+  {Stassun}}]{meibom2009}
+{Meibom}, S., {Mathieu}, R.~D., \& {Stassun}, K.~G. 2009, \apj, 695, 679
+
+\bibitem[{{Meibom} {et~al.}(2011){Meibom}, {Barnes}, {Latham}, {Batalha},
+  {Borucki}, {Koch}, {Basri}, {Walkowicz}, {Janes}, {Jenkins}, {Van Cleve},
+  {Haas}, {Bryson}, {Dupree}, {Furesz}, {Szentgyorgyi}, {Buchhave}, {Clarke},
+  {Twicken}, \& {Quintana}}]{meibom2011}
+{Meibom}, S., {Barnes}, S.~A., {Latham}, D.~W., {et~al.} 2011, \apjl, 733, L9
+
+\bibitem[{Oliphant(2007)}]{numpy}
+Oliphant, T.~E. 2007, Computing in Science Engineering, 9, 10
+
+\bibitem[{P\'erez \& Granger(2007)}]{ipython}
+P\'erez, F., \& Granger, B.~E. 2007, Computing in Science and Engineering, 9,
+  21
+
+\bibitem[{{Sandquist} {et~al.}(2016){Sandquist}, {Jessen-Hansen}, {Shetrone},
+  {Brogaard}, {Meibom}, {Leitner}, {Stello}, {Bruntt}, {Antoci}, {Orosz},
+  {Grundahl}, \& {Frandsen}}]{sandquist2016}
+{Sandquist}, E.~L., {Jessen-Hansen}, J., {Shetrone}, M.~D., {et~al.} 2016,
+  \apj, 831, 11
+
+\bibitem[{{Skumanich}(1972)}]{skumanich1972}
+{Skumanich}, A. 1972, \apj, 171, 565
+
+\bibitem[{{Stauffer} {et~al.}(2003){Stauffer}, {Jones}, {Backman}, {Hartmann},
+  {Barrado y Navascu{\'e}s}, {Pinsonneault}, {Terndrup}, \&
+  {Muench}}]{stauffer2003}
+{Stauffer}, J.~R., {Jones}, B.~F., {Backman}, D., {et~al.} 2003, \aj, 126, 833
+
+\bibitem[{{van Saders} {et~al.}(2016){van Saders}, {Ceillier}, {Metcalfe},
+  {Silva Aguirre}, {Pinsonneault}, {Garc{\'{\i}}a}, {Mathur}, \&
+  {Davies}}]{van-saders2016}
+{van Saders}, J.~L., {Ceillier}, T., {Metcalfe}, T.~S., {et~al.} 2016, \nat,
+  529, 181
+
+\bibitem[{{van Saders} \& {Pinsonneault}(2013)}]{van-saders2013}
+{van Saders}, J.~L., \& {Pinsonneault}, M.~H. 2013, \apj, 776, 67
+
+\bibitem[{{Williams} {et~al.}(2017){Williams}, {Dolphin}, {Dalcanton}, {Weisz},
+  {Bell}, {Lewis}, {Rosenfield}, {Choi}, {Skillman}, \&
+  {Monachesi}}]{williams2017}
+{Williams}, B.~F., {Dolphin}, A.~E., {Dalcanton}, J.~J., {et~al.} 2017, \apj,
+  846, 145
+
+\bibitem[{{Xiang} {et~al.}(2017){Xiang}, {Liu}, {Shi}, {Yuan}, {Huang}, {Chen},
+  {Wang}, {Tian}, {Wu}, {Yang}, {Zhang}, {Huo}, \& {Ren}}]{xiang2017}
+{Xiang}, M., {Liu}, X., {Shi}, J., {et~al.} 2017, \apjs, 232, 2
+
+\end{thebibliography}
 
 \end{document}
